@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/af7fb12180.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Rating</title>
+  </head>
+  <body>
+    
+
+
+	<div class="rating">
+      <div class="rating-area">
+			<div class="rating-item" data-rate="1"><i class="far fa-star fa-4x"></i></div>
+			<div class="rating-item" data-rate="2"><i class="far fa-star fa-4x"></i></div>
+			<div class="rating-item" data-rate="3"><i class="far fa-star fa-4x"></i></div>
+			<div class="rating-item" data-rate="4"><i class="far fa-star fa-4x"></i></div>
+			<div class="rating-item" data-rate="5"><i class="far fa-star fa-4x"></i></div>
+	    </div>
+  </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script>
+          
+
+  var container = document.querySelector(".rating");
+  var items = container.querySelectorAll(".rating-item");
+
+
+
+  container.onclick = function(e) {
+
+    
+   e.target.classList.toggle('active');
+
+     for(i=0; i<items.length; i++){
+      if(!items[i].target.classList.contains('active')){
+      items[i].target.classList.add('active');
+      } else {
+        break;
+      }
+    }}
+    
+  
+
+
+
+    </script>
+  </body>
+</html>
