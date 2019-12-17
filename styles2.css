@@ -1,0 +1,19 @@
+* {
+	 box-sizing: border-box;
+}
+ .rating {
+	 display: flex;
+	 flex-direction: row-reverse;
+	 justify-content: flex-end;
+	 width: 360px;
+	 margin: 0 auto;
+}
+ .rating-item {
+	 color: #54D1E8;
+	 cursor: pointer;
+	 
+}
+ .rating-item.active, .rating-item.active ~ *, .rating-item:hover, .rating-item:hover ~ * {
+	 color: #FF5FA6;
+}
+ 
